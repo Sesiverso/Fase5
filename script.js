@@ -49,11 +49,24 @@ const optionsContainer = document.getElementById('options-container');
 const nextButton = document.getElementById('next-button');
 const resultContainer = document.getElementById('result-container');
 
+function shuffleArray(array) {
+    // Função para embaralhar o array
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
 function showQuestion() {
     const currentQuestion = questions[currentQuestionIndex];
     questionContainer.innerText = currentQuestion.question;
     optionsContainer.innerHTML = '';
-    currentQuestion.options.forEach(option => {
+    
+    // Embaralha as opções antes de exibi-las
+    const shuffledOptions = shuffleArray([...currentQuestion.options]);
+
+    shuffledOptions.forEach(option => {
         const button = document.createElement('button');
         button.innerText = option;
         button.classList.add('option');
