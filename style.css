@@ -1,7 +1,10 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte moderna e limpa */
     text-align: center;
-    background-color: #e0f7fa;
+    background-image: url('https://st.depositphotos.com/1701651/3829/v/950/depositphotos_38291583-stock-illustration-exotic-tropical-forest.jpg'); /* Imagem de fundo */
+    background-size: cover; /* Cobre toda a tela */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-attachment: fixed; /* Fundo fixo para um efeito de paralaxe */
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Impede a rolagem horizontal */
@@ -16,11 +19,17 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: rgba(255, 255, 255, 0.85); /* Fundo branco semi-transparente para contraste com o texto */
+    border-radius: 15px; /* Bordas arredondadas para suavizar o contorno */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para destaque */
+    margin: 20px;
 }
 
 h1 {
     margin: 20px;
     color: #00796b;
+    font-size: 3em; /* Texto grande e chamativo */
+    text-shadow: 2px 2px #004d40; /* Sombra para o texto do título */
 }
 
 #quiz-container {
@@ -28,35 +37,49 @@ h1 {
     max-width: 600px;
     background-color: #ffffff;
     border: 1px solid #00796b;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px; /* Bordas mais arredondadas para um visual mais suave */
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra mais acentuada para dar profundidade */
 }
 
 button {
-    width: 200px;
-    height: 40px;
-    background-color: #4caf50;
+    width: 220px;
+    height: 50px;
+    background: linear-gradient(to right, #4caf50, #66bb6a); /* Gradiente para um efeito visual mais interessante */
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     color: white;
-    font-size: 16px;
-    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease-in-out; /* Transição suave para o hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
 }
 
 button:hover {
-    background-color: #388e3c;
+    background: linear-gradient(to right, #388e3c, #43a047); /* Mudança de cor no hover para um efeito dinâmico */
+    transform: translateY(-3px); /* Leve efeito de elevação no hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra mais profunda no hover */
+}
+
+button:active {
+    transform: translateY(2px); /* Efeito de clique no botão */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra reduzida no clique */
 }
 
 .option {
     margin: 10px 0;
+    padding: 10px;
     cursor: pointer;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+    transition: background-color 0.3s, transform 0.2s; /* Transição suave para a interação */
 }
 
 .option:hover {
-    background-color: #f1f1f1;
+    background-color: #e0e0e0;
+    transform: scale(1.05); /* Efeito de zoom leve ao passar o mouse */
 }
 
 .correct {
