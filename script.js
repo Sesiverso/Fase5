@@ -1,45 +1,5 @@
 const questions = [
     {
-        question: "Qual é o principal bioma da Mata Atlântica?",
-        options: [
-            "Floresta Tropical",
-            "Cerrado",
-            "Pampas",
-            "Caatinga"
-        ],
-        answer: "Floresta Tropical"
-    },
-    {
-        question: "Qual animal é típico da Mata Atlântica?",
-        options: [
-            "Jaguatirica",
-            "Leão",
-            "Elefante",
-            "Camelo"
-        ],
-        answer: "Jaguatirica"
-    },
-    {
-        question: "Qual é uma das principais ameaças à Mata Atlântica?",
-        options: [
-            "Desmatamento",
-            "Vulcões",
-            "Seca",
-            "Terremotos"
-        ],
-        answer: "Desmatamento"
-    },
-    {
-        question: "Qual planta é endêmica da Mata Atlântica?",
-        options: [
-            "Jequitibá",
-            "Cactos",
-            "Eucalipto",
-            "Pau-brasil"
-        ],
-        answer: "Jequitibá"
-    },
-    {
         question: "Em qual região a Mata Atlântica predomina?",
         options: [
             "Litoral",
