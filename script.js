@@ -136,7 +136,6 @@ nextButton.addEventListener('click', () => {
         nextButton.style.display = 'none';
     } else {
         showResult();
-        
     }
 });
 
